@@ -25,6 +25,7 @@ import { ChatMessage } from "@/components/chat-message"
 import { LoadingDots } from "@/components/loading-dots"
 import { SplashScreen } from "@/components/splash-screen"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { InstallPrompt } from "@/components/install-prompt"
 
 interface Message {
   id: string
@@ -204,6 +205,7 @@ export default function Home() {
   return (
     <>
       {showSplash && <SplashScreen />}
+      <InstallPrompt />
 
       <div className="flex h-screen flex-col bg-[#212121] text-white dark">
         {/* Header */}
@@ -427,6 +429,13 @@ export default function Home() {
               >
                 <h3 className="font-semibold">Appearance</h3>
                 <p className="mt-1 text-sm text-[#8e8e8e]">Theme, font size, and display options</p>
+              </Link>
+              <Link
+                href="/settings/pwa"
+                className="block rounded-lg border border-[#2f2f2f] p-4 transition-colors hover:bg-[#2f2f2f]"
+              >
+                <h3 className="font-semibold">PWA Settings</h3>
+                <p className="mt-1 text-sm text-[#8e8e8e]">App installation, offline mode, and service worker</p>
               </Link>
               <Link
                 href="/settings/notifications"
