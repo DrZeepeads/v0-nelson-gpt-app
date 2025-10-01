@@ -17,14 +17,14 @@ export function SplashScreen() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-gradient-to-br from-[#0f4c81] via-[#1a5f9e] to-[#2563eb] p-8 animate-in fade-in duration-500">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#212121] p-8 animate-in fade-in duration-500">
       {/* Main Content - Centered */}
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         {/* Icon */}
         <div className="mb-8 animate-in zoom-in duration-700 delay-100">
           <div className="relative">
-            <div className="absolute inset-0 animate-pulse rounded-full bg-white/20 blur-2xl" />
-            <div className="relative flex size-24 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm ring-2 ring-white/30 sm:size-28">
+            <div className="absolute inset-0 animate-pulse rounded-full bg-[#2f2f2f]/20 blur-2xl" />
+            <div className="relative flex size-24 items-center justify-center rounded-full bg-[#2f2f2f] backdrop-blur-sm ring-2 ring-[#3f3f3f]/30 sm:size-28">
               <Stethoscope className="size-12 text-white sm:size-14" strokeWidth={1.5} />
             </div>
           </div>
@@ -43,16 +43,16 @@ export function SplashScreen() {
         {/* Loading Indicator */}
         <div className="mt-12 animate-in fade-in duration-700 delay-700">
           <div className="flex gap-2">
-            <div className="size-2 animate-bounce rounded-full bg-white/80 [animation-delay:-0.3s]" />
-            <div className="size-2 animate-bounce rounded-full bg-white/80 [animation-delay:-0.15s]" />
-            <div className="size-2 animate-bounce rounded-full bg-white/80" />
+            <div className="size-2 animate-bounce rounded-full bg-[#8e8e8e]/80 [animation-delay:-0.3s]" />
+            <div className="size-2 animate-bounce rounded-full bg-[#8e8e8e]/80 [animation-delay:-0.15s]" />
+            <div className="size-2 animate-bounce rounded-full bg-[#8e8e8e]/80" />
           </div>
         </div>
       </div>
 
       {/* Footer */}
       <div className="animate-in slide-in-from-bottom-2 text-center duration-700 delay-1000">
-        <p className="text-balance text-sm font-medium text-white/70 sm:text-base">
+        <p className="text-balance text-sm font-medium text-[#8e8e8e] sm:text-base">
           Powered by Nelson Textbook of Pediatrics
         </p>
       </div>
