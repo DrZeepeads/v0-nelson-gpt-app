@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@langchain/core": "^0.3.78",
+    "@mistralai/mistralai": "^1.10.0",
+    "dotenv": "^17.2.3",
+    "langchain": "^0.3.35",
+    "openai": "^6.0.1"
+  }
+}
